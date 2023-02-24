@@ -1151,6 +1151,11 @@ pointer_reference {
   pointee_type_id: 0x3842a55f
 }
 pointer_reference {
+  id: 0x04810ecd
+  kind: POINTER
+  pointee_type_id: 0x3844dda9
+}
+pointer_reference {
   id: 0x0483e6f8
   kind: POINTER
   pointee_type_id: 0x384f7d7c
@@ -36281,6 +36286,11 @@ array {
 array {
   id: 0xf6acc9b2
   element_type_id: 0xca551d0a
+}
+array {
+  id: 0xf77e4d4d
+  number_of_elements: 15
+  element_type_id: 0x06835e9c
 }
 array {
   id: 0xf810a0fb
@@ -128587,6 +128597,11 @@ member {
   offset: 6080
 }
 member {
+  id: 0xd1ffb44c
+  name: "nr"
+  type_id: 0x5d8155a5
+}
+member {
   id: 0xcf9ece08
   name: "nr_accounted"
   type_id: 0x4585663f
@@ -136565,6 +136580,12 @@ member {
   offset: 128
 }
 member {
+  id: 0x78bdf3bc
+  name: "pages"
+  type_id: 0xf77e4d4d
+  offset: 64
+}
+member {
   id: 0x78dbc4af
   name: "pages"
   type_id: 0x914dbfdc
@@ -139132,6 +139153,12 @@ member {
   name: "percpu_pmu"
   type_id: 0x331b3d77
   offset: 2176
+}
+member {
+  id: 0x4db3a084
+  name: "percpu_pvec_drained"
+  type_id: 0x6d7f5ff6
+  offset: 8
 }
 member {
   id: 0x9c4094ae
@@ -235375,6 +235402,17 @@ struct_union {
   }
 }
 struct_union {
+  id: 0x3844dda9
+  kind: STRUCT
+  name: "pagevec"
+  definition {
+    bytesize: 128
+    member_id: 0xd1ffb44c
+    member_id: 0x4db3a084
+    member_id: 0x78bdf3bc
+  }
+}
+struct_union {
   id: 0x524636a2
   kind: STRUCT
   name: "param_attribute"
@@ -277825,6 +277863,11 @@ function {
   parameter_id: 0x1f73dead
 }
 function {
+  id: 0x11b81220
+  return_type_id: 0x48b5725f
+  parameter_id: 0x04810ecd
+}
+function {
   id: 0x11b81f43
   return_type_id: 0x48b5725f
   parameter_id: 0x054f691a
@@ -299312,6 +299355,11 @@ function {
   parameter_id: 0x4585663f
 }
 function {
+  id: 0x98e049ee
+  return_type_id: 0x6720d32f
+  parameter_id: 0x1582ab06
+}
+function {
   id: 0x98e450c7
   return_type_id: 0x6720d32f
   parameter_id: 0x156a41de
@@ -315116,6 +315164,15 @@ elf_symbol {
   full_name: "__page_frag_cache_drain"
 }
 elf_symbol {
+  id: 0xdc9a73c7
+  name: "__pagevec_release"
+  is_defined: true
+  symbol_type: FUNCTION
+  crc: 0xe5c48221
+  type_id: 0x11b81220
+  full_name: "__pagevec_release"
+}
+elf_symbol {
   id: 0xafa216a9
   name: "__pci_register_driver"
   is_defined: true
@@ -322015,6 +322072,15 @@ elf_symbol {
   crc: 0xdaf6fb31
   type_id: 0x751b5661
   full_name: "cgroup_taskset_next"
+}
+elf_symbol {
+  id: 0x7a871d1c
+  name: "check_move_unevictable_pages"
+  is_defined: true
+  symbol_type: FUNCTION
+  crc: 0x76e669ba
+  type_id: 0x11b81220
+  full_name: "check_move_unevictable_pages"
 }
 elf_symbol {
   id: 0x91718d34
@@ -346060,6 +346126,15 @@ elf_symbol {
   full_name: "rebuild_sched_domains"
 }
 elf_symbol {
+  id: 0x2a59e35c
+  name: "reclaim_shmem_address_space"
+  is_defined: true
+  symbol_type: FUNCTION
+  crc: 0x46b9c098
+  type_id: 0x98e049ee
+  full_name: "reclaim_shmem_address_space"
+}
+elf_symbol {
   id: 0x3b03aaea
   name: "refcount_dec_and_lock"
   is_defined: true
@@ -359599,6 +359674,10 @@ symbols {
     value: 0x057c7766
   }
   symbol {
+    key: "__pagevec_release"
+    value: 0xdc9a73c7
+  }
+  symbol {
     key: "__pci_register_driver"
     value: 0xafa216a9
   }
@@ -362665,6 +362744,10 @@ symbols {
   symbol {
     key: "cgroup_taskset_next"
     value: 0xb3cbf3c8
+  }
+  symbol {
+    key: "check_move_unevictable_pages"
+    value: 0x7a871d1c
   }
   symbol {
     key: "check_preempt_curr"
@@ -373349,6 +373432,10 @@ symbols {
   symbol {
     key: "rebuild_sched_domains"
     value: 0x590d247f
+  }
+  symbol {
+    key: "reclaim_shmem_address_space"
+    value: 0x2a59e35c
   }
   symbol {
     key: "refcount_dec_and_lock"
