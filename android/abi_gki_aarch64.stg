@@ -304762,6 +304762,13 @@ function {
   parameter_id: 0x18bd6530
 }
 function {
+  id: 0x9bb8e3d1
+  return_type_id: 0x6720d32f
+  parameter_id: 0x18bd6530
+  parameter_id: 0x04ca9246
+  parameter_id: 0x11cfee5a
+}
+function {
   id: 0x9bb8f626
   return_type_id: 0x6720d32f
   parameter_id: 0x18a2fb63
@@ -317703,6 +317710,15 @@ elf_symbol {
   full_name: "__traceiter_android_vh_cpuidle_psci_exit"
 }
 elf_symbol {
+  id: 0x0bf2f5bb
+  name: "__traceiter_android_vh_disable_thermal_cooling_stats"
+  is_defined: true
+  symbol_type: FUNCTION
+  crc: 0x3a893f24
+  type_id: 0x9bb8e3d1
+  full_name: "__traceiter_android_vh_disable_thermal_cooling_stats"
+}
+elf_symbol {
   id: 0x9dbd7b92
   name: "__traceiter_android_vh_do_wake_up_sync"
   is_defined: true
@@ -319105,6 +319121,15 @@ elf_symbol {
   crc: 0x8c331003
   type_id: 0x18ccbd2c
   full_name: "__tracepoint_android_vh_cpuidle_psci_exit"
+}
+elf_symbol {
+  id: 0x1ddb60ad
+  name: "__tracepoint_android_vh_disable_thermal_cooling_stats"
+  is_defined: true
+  symbol_type: OBJECT
+  crc: 0x5e447fbe
+  type_id: 0x18ccbd2c
+  full_name: "__tracepoint_android_vh_disable_thermal_cooling_stats"
 }
 elf_symbol {
   id: 0xe2d7542c
@@ -361986,6 +362011,10 @@ symbols {
     value: 0x9f47ed94
   }
   symbol {
+    key: "__traceiter_android_vh_disable_thermal_cooling_stats"
+    value: 0x0bf2f5bb
+  }
+  symbol {
     key: "__traceiter_android_vh_do_wake_up_sync"
     value: 0x9dbd7b92
   }
@@ -362608,6 +362637,10 @@ symbols {
   symbol {
     key: "__tracepoint_android_vh_cpuidle_psci_exit"
     value: 0xc44d61e6
+  }
+  symbol {
+    key: "__tracepoint_android_vh_disable_thermal_cooling_stats"
+    value: 0x1ddb60ad
   }
   symbol {
     key: "__tracepoint_android_vh_do_wake_up_sync"
