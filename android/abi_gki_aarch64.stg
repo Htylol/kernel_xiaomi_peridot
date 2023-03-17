@@ -354212,6 +354212,15 @@ elf_symbol {
   full_name: "system_32bit_el0_cpumask"
 }
 elf_symbol {
+  id: 0xb5701f35
+  name: "system_freezable_power_efficient_wq"
+  is_defined: true
+  symbol_type: OBJECT
+  crc: 0xd067d3c5
+  type_id: 0x13f8b706
+  full_name: "system_freezable_power_efficient_wq"
+}
+elf_symbol {
   id: 0xeeb4dc4c
   name: "system_freezable_wq"
   is_defined: true
@@ -378337,6 +378346,10 @@ symbols {
   symbol {
     key: "system_32bit_el0_cpumask"
     value: 0xb6c44fb1
+  }
+  symbol {
+    key: "system_freezable_power_efficient_wq"
+    value: 0xb5701f35
   }
   symbol {
     key: "system_freezable_wq"
