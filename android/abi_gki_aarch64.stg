@@ -24756,6 +24756,11 @@ pointer_reference {
   pointee_type_id: 0xf0128d16
 }
 pointer_reference {
+  id: 0x3694d3c2
+  kind: POINTER
+  pointee_type_id: 0xf013a996
+}
+pointer_reference {
   id: 0x369662d6
   kind: POINTER
   pointee_type_id: 0xf0196dc4
@@ -32874,6 +32879,11 @@ qualified {
   id: 0xf005ac66
   qualifier: CONST
   qualified_type_id: 0xb0510713
+}
+qualified {
+  id: 0xf013a996
+  qualifier: CONST
+  qualified_type_id: 0xb00910d2
 }
 qualified {
   id: 0xf02f20a3
@@ -168737,6 +168747,12 @@ member {
   offset: 6592
 }
 member {
+  id: 0x3d9ec2a7
+  name: "set"
+  type_id: 0x4086b7da
+  offset: 64
+}
+member {
   id: 0x3d9ecaea
   name: "set"
   type_id: 0x4086b7da
@@ -255026,6 +255042,18 @@ struct_union {
   }
 }
 struct_union {
+  id: 0xb00910d2
+  kind: STRUCT
+  name: "typec_mux_desc"
+  definition {
+    bytesize: 32
+    member_id: 0x6e4d805e
+    member_id: 0x3d9ec2a7
+    member_id: 0x0de5752a
+    member_id: 0x7020be32
+  }
+}
+struct_union {
   id: 0xe936a00b
   kind: STRUCT
   name: "typec_mux_dev"
@@ -296927,6 +296955,12 @@ function {
   parameter_id: 0x4585663f
   parameter_id: 0x3e10b518
   parameter_id: 0xa52a0930
+}
+function {
+  id: 0x6caf01af
+  return_type_id: 0x30dd91a5
+  parameter_id: 0x0258f96e
+  parameter_id: 0x3694d3c2
 }
 function {
   id: 0x6cb3f0eb
@@ -363820,6 +363854,15 @@ elf_symbol {
   full_name: "typec_mux_get_drvdata"
 }
 elf_symbol {
+  id: 0x29215b38
+  name: "typec_mux_register"
+  is_defined: true
+  symbol_type: FUNCTION
+  crc: 0x29a3326a
+  type_id: 0x6caf01af
+  full_name: "typec_mux_register"
+}
+elf_symbol {
   id: 0x22d09ebb
   name: "typec_register_partner"
   is_defined: true
@@ -388506,6 +388549,10 @@ symbols {
   symbol {
     key: "typec_mux_get_drvdata"
     value: 0x8fafe0a6
+  }
+  symbol {
+    key: "typec_mux_register"
+    value: 0x29215b38
   }
   symbol {
     key: "typec_register_partner"
