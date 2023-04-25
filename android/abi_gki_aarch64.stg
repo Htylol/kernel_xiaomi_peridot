@@ -328770,6 +328770,12 @@ function {
   parameter_id: 0x295c7202
 }
 function {
+  id: 0x9f6374a9
+  return_type_id: 0x6720d32f
+  parameter_id: 0x09626b7f
+  parameter_id: 0x2ec35650
+}
+function {
   id: 0x9f63f44d
   return_type_id: 0x6720d32f
   parameter_id: 0x0930c6d9
@@ -366261,6 +366267,15 @@ elf_symbol {
   full_name: "mipi_dsi_dcs_exit_sleep_mode"
 }
 elf_symbol {
+  id: 0x3a394021
+  name: "mipi_dsi_dcs_get_display_brightness"
+  is_defined: true
+  symbol_type: FUNCTION
+  crc: 0x3bc53664
+  type_id: 0x9f6374a9
+  full_name: "mipi_dsi_dcs_get_display_brightness"
+}
+elf_symbol {
   id: 0xefe40ad0
   name: "mipi_dsi_dcs_read"
   is_defined: true
@@ -372211,6 +372226,15 @@ elf_symbol {
   crc: 0x911b3e3f
   type_id: 0x924d155a
   full_name: "platform_irqchip_probe"
+}
+elf_symbol {
+  id: 0x5b48ee3a
+  name: "platform_msi_create_irq_domain"
+  is_defined: true
+  symbol_type: FUNCTION
+  crc: 0xd5c5c7ff
+  type_id: 0x5e4ba6ce
+  full_name: "platform_msi_create_irq_domain"
 }
 elf_symbol {
   id: 0xdea8ab93
@@ -379871,6 +379895,15 @@ elf_symbol {
   crc: 0x588fb299
   type_id: 0x9d328b5e
   full_name: "snd_soc_dapm_mux_update_power"
+}
+elf_symbol {
+  id: 0x64da441a
+  name: "snd_soc_dapm_nc_pin"
+  is_defined: true
+  symbol_type: FUNCTION
+  crc: 0x16466e10
+  type_id: 0x9d7d5431
+  full_name: "snd_soc_dapm_nc_pin"
 }
 elf_symbol {
   id: 0xc1355d55
@@ -404442,6 +404475,10 @@ symbols {
     value: 0xc42d006b
   }
   symbol {
+    key: "mipi_dsi_dcs_get_display_brightness"
+    value: 0x3a394021
+  }
+  symbol {
     key: "mipi_dsi_dcs_read"
     value: 0xefe40ad0
   }
@@ -407084,6 +407121,10 @@ symbols {
   symbol {
     key: "platform_irqchip_probe"
     value: 0xa10f5ac7
+  }
+  symbol {
+    key: "platform_msi_create_irq_domain"
+    value: 0x5b48ee3a
   }
   symbol {
     key: "platform_msi_domain_alloc_irqs"
@@ -410488,6 +410529,10 @@ symbols {
   symbol {
     key: "snd_soc_dapm_mux_update_power"
     value: 0xb11490ee
+  }
+  symbol {
+    key: "snd_soc_dapm_nc_pin"
+    value: 0x64da441a
   }
   symbol {
     key: "snd_soc_dapm_new_controls"
