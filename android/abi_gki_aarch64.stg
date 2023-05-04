@@ -291962,6 +291962,13 @@ function {
   parameter_id: 0xa52a0930
 }
 function {
+  id: 0x02968dbf
+  return_type_id: 0x0483e6f8
+  parameter_id: 0xf1a6dfed
+  parameter_id: 0x3e10b518
+  parameter_id: 0xe5e56f65
+}
+function {
   id: 0x02f1783f
   return_type_id: 0x37fd71e6
   parameter_id: 0x4585663f
@@ -300451,6 +300458,12 @@ function {
   id: 0x1c0343dd
   return_type_id: 0x48b5725f
   parameter_id: 0x326c4938
+}
+function {
+  id: 0x1c048955
+  return_type_id: 0x48b5725f
+  parameter_id: 0x33f8b54b
+  parameter_id: 0x18bd6530
 }
 function {
   id: 0x1c05d45f
@@ -329953,6 +329966,12 @@ function {
   parameter_id: 0x36d2de0e
 }
 function {
+  id: 0xa80f38e4
+  return_type_id: 0x0a1edf98
+  parameter_id: 0x0017d728
+  parameter_id: 0x3db7fb40
+}
+function {
   id: 0xa84299a1
   return_type_id: 0x35a92769
   parameter_id: 0x35a92769
@@ -340998,6 +341017,15 @@ elf_symbol {
   full_name: "_ctype"
 }
 elf_symbol {
+  id: 0x602bd335
+  name: "_dev_alert"
+  is_defined: true
+  symbol_type: FUNCTION
+  crc: 0xcdcb04f1
+  type_id: 0x1fa0c57a
+  full_name: "_dev_alert"
+}
+elf_symbol {
   id: 0x500c47a8
   name: "_dev_crit"
   is_defined: true
@@ -347455,6 +347483,15 @@ elf_symbol {
   crc: 0x2f734597
   type_id: 0xc3af9ce9
   full_name: "dapm_kcontrol_get_value"
+}
+elf_symbol {
+  id: 0x5489a975
+  name: "dapm_pinctrl_event"
+  is_defined: true
+  symbol_type: FUNCTION
+  crc: 0xe096b7fa
+  type_id: 0x9fb0a0b3
+  full_name: "dapm_pinctrl_event"
 }
 elf_symbol {
   id: 0xd8f17b20
@@ -364827,6 +364864,15 @@ elf_symbol {
   full_name: "kunit_ptr_not_err_assert_format"
 }
 elf_symbol {
+  id: 0x3160ee82
+  name: "kvasprintf"
+  is_defined: true
+  symbol_type: FUNCTION
+  crc: 0x587b0954
+  type_id: 0x02968dbf
+  full_name: "kvasprintf"
+}
+elf_symbol {
   id: 0xbc9cd951
   name: "kvasprintf_const"
   is_defined: true
@@ -379281,6 +379327,15 @@ elf_symbol {
   full_name: "snd_ctl_remove"
 }
 elf_symbol {
+  id: 0xe3942db0
+  name: "snd_device_free"
+  is_defined: true
+  symbol_type: FUNCTION
+  crc: 0xb8d32d15
+  type_id: 0x1c048955
+  full_name: "snd_device_free"
+}
+elf_symbol {
   id: 0x74d92df1
   name: "snd_dma_alloc_dir_pages"
   is_defined: true
@@ -379803,6 +379858,15 @@ elf_symbol {
   full_name: "snd_soc_card_jack_new_pins"
 }
 elf_symbol {
+  id: 0x1c40b8b7
+  name: "snd_soc_component_async_complete"
+  is_defined: true
+  symbol_type: FUNCTION
+  crc: 0xedf3e322
+  type_id: 0x14c1b0e8
+  full_name: "snd_soc_component_async_complete"
+}
+elf_symbol {
   id: 0xb63a9550
   name: "snd_soc_component_disable_pin"
   is_defined: true
@@ -379911,6 +379975,15 @@ elf_symbol {
   full_name: "snd_soc_component_update_bits"
 }
 elf_symbol {
+  id: 0xe278d2b9
+  name: "snd_soc_component_update_bits_async"
+  is_defined: true
+  symbol_type: FUNCTION
+  crc: 0x83369613
+  type_id: 0x98df6080
+  full_name: "snd_soc_component_update_bits_async"
+}
+elf_symbol {
   id: 0x84e7b6d6
   name: "snd_soc_component_write"
   is_defined: true
@@ -380008,6 +380081,15 @@ elf_symbol {
   crc: 0xb941ccfe
   type_id: 0x9dcdf9a5
   full_name: "snd_soc_dai_set_tdm_slot"
+}
+elf_symbol {
+  id: 0x9994fae4
+  name: "snd_soc_dai_set_tristate"
+  is_defined: true
+  symbol_type: FUNCTION
+  crc: 0xbc522d3f
+  type_id: 0x9d578b63
+  full_name: "snd_soc_dai_set_tristate"
 }
 elf_symbol {
   id: 0x6b59ec0c
@@ -380145,6 +380227,15 @@ elf_symbol {
   full_name: "snd_soc_dapm_get_enum_double"
 }
 elf_symbol {
+  id: 0x8fdbed5d
+  name: "snd_soc_dapm_get_pin_status"
+  is_defined: true
+  symbol_type: FUNCTION
+  crc: 0x4855d3a2
+  type_id: 0x9d7d5431
+  full_name: "snd_soc_dapm_get_pin_status"
+}
+elf_symbol {
   id: 0xc4468dde
   name: "snd_soc_dapm_get_pin_switch"
   is_defined: true
@@ -380226,6 +380317,15 @@ elf_symbol {
   full_name: "snd_soc_dapm_nc_pin"
 }
 elf_symbol {
+  id: 0x78acbf5c
+  name: "snd_soc_dapm_new_control"
+  is_defined: true
+  symbol_type: FUNCTION
+  crc: 0x08d0f188
+  type_id: 0xa80f38e4
+  full_name: "snd_soc_dapm_new_control"
+}
+elf_symbol {
   id: 0xc1355d55
   name: "snd_soc_dapm_new_controls"
   is_defined: true
@@ -380289,6 +380389,15 @@ elf_symbol {
   full_name: "snd_soc_dapm_sync_unlocked"
 }
 elf_symbol {
+  id: 0x6355ee58
+  name: "snd_soc_dapm_weak_routes"
+  is_defined: true
+  symbol_type: FUNCTION
+  crc: 0xca9f073f
+  type_id: 0x9d6ad4e2
+  full_name: "snd_soc_dapm_weak_routes"
+}
+elf_symbol {
   id: 0x687a68d3
   name: "snd_soc_dpcm_get_substream"
   is_defined: true
@@ -380305,6 +380414,15 @@ elf_symbol {
   crc: 0x7a906d3e
   type_id: 0x6eef99a2
   full_name: "snd_soc_find_dai"
+}
+elf_symbol {
+  id: 0xc88e38bb
+  name: "snd_soc_find_dai_with_mutex"
+  is_defined: true
+  symbol_type: FUNCTION
+  crc: 0x25746da5
+  type_id: 0x6eef99a2
+  full_name: "snd_soc_find_dai_with_mutex"
 }
 elf_symbol {
   id: 0x4086fab0
@@ -380359,6 +380477,15 @@ elf_symbol {
   crc: 0x2fe78763
   type_id: 0x973a41ee
   full_name: "snd_soc_get_volsw_sx"
+}
+elf_symbol {
+  id: 0xb5349f49
+  name: "snd_soc_get_xr_sx"
+  is_defined: true
+  symbol_type: FUNCTION
+  crc: 0x36224423
+  type_id: 0x973a41ee
+  full_name: "snd_soc_get_xr_sx"
 }
 elf_symbol {
   id: 0x98f26ea1
@@ -380559,6 +380686,15 @@ elf_symbol {
   full_name: "snd_soc_of_parse_tdm_slot"
 }
 elf_symbol {
+  id: 0x88e57905
+  name: "snd_soc_of_put_dai_link_codecs"
+  is_defined: true
+  symbol_type: FUNCTION
+  crc: 0x69565f02
+  type_id: 0x1899030d
+  full_name: "snd_soc_of_put_dai_link_codecs"
+}
+elf_symbol {
   id: 0x97f4e147
   name: "snd_soc_params_to_bclk"
   is_defined: true
@@ -380629,6 +380765,15 @@ elf_symbol {
   crc: 0xb9ee68b8
   type_id: 0x973a41ee
   full_name: "snd_soc_put_volsw_sx"
+}
+elf_symbol {
+  id: 0x72a7bbd2
+  name: "snd_soc_put_xr_sx"
+  is_defined: true
+  symbol_type: FUNCTION
+  crc: 0xd1a73bcd
+  type_id: 0x973a41ee
+  full_name: "snd_soc_put_xr_sx"
 }
 elf_symbol {
   id: 0x5fe5beeb
@@ -393619,6 +393764,10 @@ symbols {
     value: 0xa762593e
   }
   symbol {
+    key: "_dev_alert"
+    value: 0x602bd335
+  }
+  symbol {
     key: "_dev_crit"
     value: 0x500c47a8
   }
@@ -396493,6 +396642,10 @@ symbols {
   symbol {
     key: "dapm_kcontrol_get_value"
     value: 0x53d11a8d
+  }
+  symbol {
+    key: "dapm_pinctrl_event"
+    value: 0x5489a975
   }
   symbol {
     key: "dapm_regulator_event"
@@ -404207,6 +404360,10 @@ symbols {
     value: 0xb1bdece7
   }
   symbol {
+    key: "kvasprintf"
+    value: 0x3160ee82
+  }
+  symbol {
     key: "kvasprintf_const"
     value: 0xbc9cd951
   }
@@ -410631,6 +410788,10 @@ symbols {
     value: 0x20fc506b
   }
   symbol {
+    key: "snd_device_free"
+    value: 0xe3942db0
+  }
+  symbol {
     key: "snd_dma_alloc_dir_pages"
     value: 0x74d92df1
   }
@@ -410863,6 +411024,10 @@ symbols {
     value: 0xf84e3b0d
   }
   symbol {
+    key: "snd_soc_component_async_complete"
+    value: 0x1c40b8b7
+  }
+  symbol {
     key: "snd_soc_component_disable_pin"
     value: 0xb63a9550
   }
@@ -410911,6 +411076,10 @@ symbols {
     value: 0x690f235d
   }
   symbol {
+    key: "snd_soc_component_update_bits_async"
+    value: 0xe278d2b9
+  }
+  symbol {
     key: "snd_soc_component_write"
     value: 0x84e7b6d6
   }
@@ -410953,6 +411122,10 @@ symbols {
   symbol {
     key: "snd_soc_dai_set_tdm_slot"
     value: 0x14d25dda
+  }
+  symbol {
+    key: "snd_soc_dai_set_tristate"
+    value: 0x9994fae4
   }
   symbol {
     key: "snd_soc_daifmt_clock_provider_flipped"
@@ -411015,6 +411188,10 @@ symbols {
     value: 0x015c4998
   }
   symbol {
+    key: "snd_soc_dapm_get_pin_status"
+    value: 0x8fdbed5d
+  }
+  symbol {
     key: "snd_soc_dapm_get_pin_switch"
     value: 0xc4468dde
   }
@@ -411051,6 +411228,10 @@ symbols {
     value: 0x64da441a
   }
   symbol {
+    key: "snd_soc_dapm_new_control"
+    value: 0x78acbf5c
+  }
+  symbol {
     key: "snd_soc_dapm_new_controls"
     value: 0xc1355d55
   }
@@ -411079,12 +411260,20 @@ symbols {
     value: 0xc5bea14a
   }
   symbol {
+    key: "snd_soc_dapm_weak_routes"
+    value: 0x6355ee58
+  }
+  symbol {
     key: "snd_soc_dpcm_get_substream"
     value: 0x687a68d3
   }
   symbol {
     key: "snd_soc_find_dai"
     value: 0x97843792
+  }
+  symbol {
+    key: "snd_soc_find_dai_with_mutex"
+    value: 0xc88e38bb
   }
   symbol {
     key: "snd_soc_get_dai_name"
@@ -411109,6 +411298,10 @@ symbols {
   symbol {
     key: "snd_soc_get_volsw_sx"
     value: 0x04c98965
+  }
+  symbol {
+    key: "snd_soc_get_xr_sx"
+    value: 0xb5349f49
   }
   symbol {
     key: "snd_soc_info_enum_double"
@@ -411199,6 +411392,10 @@ symbols {
     value: 0xa976fac7
   }
   symbol {
+    key: "snd_soc_of_put_dai_link_codecs"
+    value: 0x88e57905
+  }
+  symbol {
     key: "snd_soc_params_to_bclk"
     value: 0x97f4e147
   }
@@ -411229,6 +411426,10 @@ symbols {
   symbol {
     key: "snd_soc_put_volsw_sx"
     value: 0x00b2c629
+  }
+  symbol {
+    key: "snd_soc_put_xr_sx"
+    value: 0x72a7bbd2
   }
   symbol {
     key: "snd_soc_register_card"
