@@ -322137,6 +322137,15 @@ function {
   parameter_id: 0xc9082b19
 }
 function {
+  id: 0x9b6e7eee
+  return_type_id: 0x6720d32f
+  parameter_id: 0x18bd6530
+  parameter_id: 0x33756485
+  parameter_id: 0x33756485
+  parameter_id: 0x33756485
+  parameter_id: 0x064d6086
+}
+function {
   id: 0x9b6eb620
   return_type_id: 0x6720d32f
   parameter_id: 0x18bd6530
@@ -328546,6 +328555,12 @@ function {
   parameter_id: 0x6720d32f
 }
 function {
+  id: 0x9f5021bd
+  return_type_id: 0x6720d32f
+  parameter_id: 0x0b27dc43
+  parameter_id: 0x064d6086
+}
+function {
   id: 0x9f5327f4
   return_type_id: 0x6720d32f
   parameter_id: 0x0b4f136e
@@ -328678,6 +328693,16 @@ function {
   return_type_id: 0x6720d32f
   parameter_id: 0x0beab59b
   parameter_id: 0x054f691a
+}
+function {
+  id: 0x9f72f53e
+  return_type_id: 0x6720d32f
+  parameter_id: 0x0258f96e
+  parameter_id: 0x92233392
+  parameter_id: 0xbdd18903
+  parameter_id: 0xf435685e
+  parameter_id: 0x0258f96e
+  parameter_id: 0x295c7202
 }
 function {
   id: 0x9f7a4e49
@@ -330448,6 +330473,13 @@ function {
   parameter_id: 0x33756485
   parameter_id: 0x4585663f
   parameter_id: 0x6d7f5ff6
+}
+function {
+  id: 0xb957d705
+  return_type_id: 0x6720d32f
+  parameter_id: 0x92233392
+  parameter_id: 0x18bd6530
+  parameter_id: 0xf435685e
 }
 function {
   id: 0xb9640b60
@@ -335968,6 +336000,15 @@ elf_symbol {
   full_name: "__phy_modify"
 }
 elf_symbol {
+  id: 0xd9bec400
+  name: "__pkvm_load_el2_module"
+  is_defined: true
+  symbol_type: FUNCTION
+  crc: 0xd1d2c552
+  type_id: 0x9f5021bd
+  full_name: "__pkvm_load_el2_module"
+}
+elf_symbol {
   id: 0x430bd907
   name: "__platform_driver_probe"
   is_defined: true
@@ -337948,6 +337989,15 @@ elf_symbol {
   full_name: "__traceiter_android_vh_kswapd_per_node"
 }
 elf_symbol {
+  id: 0x61ea12b8
+  name: "__traceiter_android_vh_map_util_freq"
+  is_defined: true
+  symbol_type: FUNCTION
+  crc: 0xf7d7ec49
+  type_id: 0x9b6e7eee
+  full_name: "__traceiter_android_vh_map_util_freq"
+}
+elf_symbol {
   id: 0xe17999f4
   name: "__traceiter_android_vh_mutex_wait_finish"
   is_defined: true
@@ -339836,6 +339886,15 @@ elf_symbol {
   crc: 0xe7839d0d
   type_id: 0x18ccbd2c
   full_name: "__tracepoint_android_vh_kswapd_per_node"
+}
+elf_symbol {
+  id: 0x00a5fe5e
+  name: "__tracepoint_android_vh_map_util_freq"
+  is_defined: true
+  symbol_type: OBJECT
+  crc: 0xf9624317
+  type_id: 0x18ccbd2c
+  full_name: "__tracepoint_android_vh_map_util_freq"
 }
 elf_symbol {
   id: 0x76e879b6
@@ -372018,6 +372077,51 @@ elf_symbol {
   full_name: "pktgen_xfrm_outer_mode_output"
 }
 elf_symbol {
+  id: 0x9e86d87a
+  name: "pkvm_iommu_driver_init"
+  is_defined: true
+  symbol_type: FUNCTION
+  crc: 0xf04a072e
+  type_id: 0xb957d705
+  full_name: "pkvm_iommu_driver_init"
+}
+elf_symbol {
+  id: 0x6f7172e0
+  name: "pkvm_iommu_finalize"
+  is_defined: true
+  symbol_type: FUNCTION
+  crc: 0xbc2fdabc
+  type_id: 0x8448d7e4
+  full_name: "pkvm_iommu_finalize"
+}
+elf_symbol {
+  id: 0xa74e4e73
+  name: "pkvm_iommu_register"
+  is_defined: true
+  symbol_type: FUNCTION
+  crc: 0x7dbf092d
+  type_id: 0x9f72f53e
+  full_name: "pkvm_iommu_register"
+}
+elf_symbol {
+  id: 0x508c3717
+  name: "pkvm_iommu_resume"
+  is_defined: true
+  symbol_type: FUNCTION
+  crc: 0x19a525d9
+  type_id: 0x9d16dd74
+  full_name: "pkvm_iommu_resume"
+}
+elf_symbol {
+  id: 0xe5abcddf
+  name: "pkvm_iommu_suspend"
+  is_defined: true
+  symbol_type: FUNCTION
+  crc: 0x976a4802
+  type_id: 0x9d16dd74
+  full_name: "pkvm_iommu_suspend"
+}
+elf_symbol {
   id: 0xb30e2978
   name: "platform_bus"
   is_defined: true
@@ -391095,6 +391199,10 @@ symbols {
     value: 0x28bdd181
   }
   symbol {
+    key: "__pkvm_load_el2_module"
+    value: 0xd9bec400
+  }
+  symbol {
     key: "__platform_driver_probe"
     value: 0x430bd907
   }
@@ -391975,6 +392083,10 @@ symbols {
     value: 0x18fde973
   }
   symbol {
+    key: "__traceiter_android_vh_map_util_freq"
+    value: 0x61ea12b8
+  }
+  symbol {
     key: "__traceiter_android_vh_mutex_wait_finish"
     value: 0xe17999f4
   }
@@ -392813,6 +392925,10 @@ symbols {
   symbol {
     key: "__tracepoint_android_vh_kswapd_per_node"
     value: 0x586a06d1
+  }
+  symbol {
+    key: "__tracepoint_android_vh_map_util_freq"
+    value: 0x00a5fe5e
   }
   symbol {
     key: "__tracepoint_android_vh_mutex_wait_finish"
@@ -407113,6 +407229,26 @@ symbols {
   symbol {
     key: "pktgen_xfrm_outer_mode_output"
     value: 0xac156dd0
+  }
+  symbol {
+    key: "pkvm_iommu_driver_init"
+    value: 0x9e86d87a
+  }
+  symbol {
+    key: "pkvm_iommu_finalize"
+    value: 0x6f7172e0
+  }
+  symbol {
+    key: "pkvm_iommu_register"
+    value: 0xa74e4e73
+  }
+  symbol {
+    key: "pkvm_iommu_resume"
+    value: 0x508c3717
+  }
+  symbol {
+    key: "pkvm_iommu_suspend"
+    value: 0xe5abcddf
   }
   symbol {
     key: "platform_bus"
