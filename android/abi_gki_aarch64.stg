@@ -322133,6 +322133,15 @@ elf_symbol {
   full_name: "__traceiter_android_vh_modify_thermal_target_freq"
 }
 elf_symbol {
+  id: 0x306a6019
+  name: "__traceiter_android_vh_mpam_set"
+  is_defined: true
+  symbol_type: FUNCTION
+  crc: 0x4a91bad4
+  type_id: 0x9bdc9aae
+  full_name: "__traceiter_android_vh_mpam_set"
+}
+elf_symbol {
   id: 0xb1c564a3
   name: "__traceiter_android_vh_mutex_can_spin_on_owner"
   is_defined: true
@@ -325011,6 +325020,15 @@ elf_symbol {
   crc: 0xa965d530
   type_id: 0x18ccbd2c
   full_name: "__tracepoint_android_vh_modify_thermal_target_freq"
+}
+elf_symbol {
+  id: 0x65023f2f
+  name: "__tracepoint_android_vh_mpam_set"
+  is_defined: true
+  symbol_type: OBJECT
+  crc: 0x0315217a
+  type_id: 0x18ccbd2c
+  full_name: "__tracepoint_android_vh_mpam_set"
 }
 elf_symbol {
   id: 0xd5097f8d
@@ -376483,6 +376501,7 @@ interface {
   symbol_id: 0xa77effd1
   symbol_id: 0xb7624cbd
   symbol_id: 0x29785770
+  symbol_id: 0x306a6019
   symbol_id: 0xb1c564a3
   symbol_id: 0xacfcb454
   symbol_id: 0x17b175ff
@@ -376803,6 +376822,7 @@ interface {
   symbol_id: 0xe2ad11db
   symbol_id: 0xcac93aff
   symbol_id: 0x43873fea
+  symbol_id: 0x65023f2f
   symbol_id: 0xd5097f8d
   symbol_id: 0x6d3764d2
   symbol_id: 0xecc3ea35
