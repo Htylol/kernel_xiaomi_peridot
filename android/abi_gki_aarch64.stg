@@ -293294,6 +293294,12 @@ function {
   parameter_id: 0x38d23361
 }
 function {
+  id: 0x4132c986
+  return_type_id: 0x04ca9246
+  parameter_id: 0x276a1779
+  parameter_id: 0x162ee618
+}
+function {
   id: 0x416927bc
   return_type_id: 0x00c83ba6
   parameter_id: 0x2cac4c27
@@ -338580,6 +338586,15 @@ elf_symbol {
   full_name: "devfreq_add_governor"
 }
 elf_symbol {
+  id: 0x15eb01e7
+  name: "devfreq_cooling_em_register"
+  is_defined: true
+  symbol_type: FUNCTION
+  crc: 0xa153b759
+  type_id: 0x4132c986
+  full_name: "devfreq_cooling_em_register"
+}
+elf_symbol {
   id: 0x647c0881
   name: "devfreq_cooling_unregister"
   is_defined: true
@@ -383121,6 +383136,7 @@ interface {
   symbol_id: 0xfc7749bc
   symbol_id: 0x55a1ee95
   symbol_id: 0x04c32c7c
+  symbol_id: 0x15eb01e7
   symbol_id: 0x647c0881
   symbol_id: 0x19e74e36
   symbol_id: 0xdb9d4783
