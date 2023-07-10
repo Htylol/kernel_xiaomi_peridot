@@ -363838,6 +363838,15 @@ elf_symbol {
   full_name: "sk_alloc"
 }
 elf_symbol {
+  id: 0x1295815b
+  name: "sk_capable"
+  is_defined: true
+  symbol_type: FUNCTION
+  crc: 0x9bced1ab
+  type_id: 0xf1208847
+  full_name: "sk_capable"
+}
+elf_symbol {
   id: 0xd7cc5056
   name: "sk_common_release"
   is_defined: true
@@ -381992,6 +382001,7 @@ interface {
   symbol_id: 0x4f6b19f1
   symbol_id: 0xd4ea779d
   symbol_id: 0x67a38bc7
+  symbol_id: 0x1295815b
   symbol_id: 0xd7cc5056
   symbol_id: 0x40df740b
   symbol_id: 0x89a97545
