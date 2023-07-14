@@ -309628,6 +309628,14 @@ function {
   parameter_id: 0x01ae1e33
 }
 function {
+  id: 0x9dec0a70
+  return_type_id: 0x6720d32f
+  parameter_id: 0x0258f96e
+  parameter_id: 0x3e10b518
+  parameter_id: 0x051414e1
+  parameter_id: 0xf435685e
+}
+function {
   id: 0x9dec5d8d
   return_type_id: 0x6720d32f
   parameter_id: 0x0258f96e
@@ -334037,6 +334045,15 @@ elf_symbol {
   crc: 0x4f49d69f
   type_id: 0x9defdaa5
   full_name: "device_property_read_string"
+}
+elf_symbol {
+  id: 0xe592ed14
+  name: "device_property_read_string_array"
+  is_defined: true
+  symbol_type: FUNCTION
+  crc: 0x1caa071f
+  type_id: 0x9dec0a70
+  full_name: "device_property_read_string_array"
 }
 elf_symbol {
   id: 0x90a9db6c
@@ -378758,6 +378775,7 @@ interface {
   symbol_id: 0xd0ac64f7
   symbol_id: 0xa1e3330b
   symbol_id: 0x85ab844f
+  symbol_id: 0xe592ed14
   symbol_id: 0x90a9db6c
   symbol_id: 0xde1fbc57
   symbol_id: 0xa161f29a
