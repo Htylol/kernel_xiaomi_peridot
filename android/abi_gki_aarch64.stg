@@ -292676,6 +292676,12 @@ function {
   parameter_id: 0x3f54a013
 }
 function {
+  id: 0x45846d91
+  return_type_id: 0xc9082b19
+  parameter_id: 0x078316ff
+  parameter_id: 0x6720d32f
+}
+function {
   id: 0x45a8a3c4
   return_type_id: 0x00c83ba6
   parameter_id: 0x3860f3c0
@@ -367709,6 +367715,15 @@ elf_symbol {
   full_name: "sk_alloc"
 }
 elf_symbol {
+  id: 0x1295815b
+  name: "sk_capable"
+  is_defined: true
+  symbol_type: FUNCTION
+  crc: 0xa18d7705
+  type_id: 0xf1208847
+  full_name: "sk_capable"
+}
+elf_symbol {
   id: 0xd7cc5056
   name: "sk_common_release"
   is_defined: true
@@ -374219,6 +374234,15 @@ elf_symbol {
   full_name: "ufshcd_mcq_config_esi"
 }
 elf_symbol {
+  id: 0x71dad1b2
+  name: "ufshcd_mcq_config_mac"
+  is_defined: true
+  symbol_type: FUNCTION
+  crc: 0xb385bc56
+  type_id: 0x125cb480
+  full_name: "ufshcd_mcq_config_mac"
+}
+elf_symbol {
   id: 0x051c0489
   name: "ufshcd_mcq_enable_esi"
   is_defined: true
@@ -374226,6 +374250,15 @@ elf_symbol {
   crc: 0x5af5f810
   type_id: 0x1178942c
   full_name: "ufshcd_mcq_enable_esi"
+}
+elf_symbol {
+  id: 0x562c9a11
+  name: "ufshcd_mcq_make_queues_operational"
+  is_defined: true
+  symbol_type: FUNCTION
+  crc: 0x32eb2fea
+  type_id: 0x1178942c
+  full_name: "ufshcd_mcq_make_queues_operational"
 }
 elf_symbol {
   id: 0x56d1da85
@@ -374244,6 +374277,15 @@ elf_symbol {
   crc: 0xecae0b61
   type_id: 0x30f8e5d3
   full_name: "ufshcd_mcq_poll_cqe_nolock"
+}
+elf_symbol {
+  id: 0xaefd3622
+  name: "ufshcd_mcq_read_cqis"
+  is_defined: true
+  symbol_type: FUNCTION
+  crc: 0x41e6e314
+  type_id: 0x45846d91
+  full_name: "ufshcd_mcq_read_cqis"
 }
 elf_symbol {
   id: 0x3ecd46f0
@@ -385458,6 +385500,7 @@ interface {
   symbol_id: 0x4f6b19f1
   symbol_id: 0xd4ea779d
   symbol_id: 0x67a38bc7
+  symbol_id: 0x1295815b
   symbol_id: 0xd7cc5056
   symbol_id: 0x40df740b
   symbol_id: 0x89a97545
@@ -386182,9 +386225,12 @@ interface {
   symbol_id: 0xcd6f9634
   symbol_id: 0xba7435fd
   symbol_id: 0xb59c5eaf
+  symbol_id: 0x71dad1b2
   symbol_id: 0x051c0489
+  symbol_id: 0x562c9a11
   symbol_id: 0x56d1da85
   symbol_id: 0xe74af45a
+  symbol_id: 0xaefd3622
   symbol_id: 0x3ecd46f0
   symbol_id: 0xde541a7b
   symbol_id: 0xe6e08555
