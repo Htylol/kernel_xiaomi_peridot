@@ -325887,6 +325887,14 @@ function {
   parameter_id: 0xf435685e
 }
 function {
+  id: 0xab336d04
+  return_type_id: 0xfc0e1dbd
+  parameter_id: 0x33756485
+  parameter_id: 0x33756485
+  parameter_id: 0x0b30ee00
+  parameter_id: 0x4585663f
+}
+function {
   id: 0xab344d2b
   return_type_id: 0x31b5a66f
   parameter_id: 0x21003da7
@@ -341903,6 +341911,15 @@ elf_symbol {
   crc: 0xde293f9e
   type_id: 0x154da6ed
   full_name: "add_wait_queue_exclusive"
+}
+elf_symbol {
+  id: 0x717596ae
+  name: "add_wait_queue_priority"
+  is_defined: true
+  symbol_type: FUNCTION
+  crc: 0x005f18a6
+  type_id: 0x154da6ed
+  full_name: "add_wait_queue_priority"
 }
 elf_symbol {
   id: 0xf9bb4624
@@ -359942,6 +359959,15 @@ elf_symbol {
   full_name: "get_user_pages_fast"
 }
 elf_symbol {
+  id: 0x6a8a4883
+  name: "get_user_pages_fast_only"
+  is_defined: true
+  symbol_type: FUNCTION
+  crc: 0xce7bb883
+  type_id: 0x90d074d8
+  full_name: "get_user_pages_fast_only"
+}
+elf_symbol {
   id: 0x4909936e
   name: "get_user_pages_remote"
   is_defined: true
@@ -359949,6 +359975,15 @@ elf_symbol {
   crc: 0xe4dd19ab
   type_id: 0xa12d9647
   full_name: "get_user_pages_remote"
+}
+elf_symbol {
+  id: 0x474c6d6a
+  name: "get_user_pages_unlocked"
+  is_defined: true
+  symbol_type: FUNCTION
+  crc: 0x25491db2
+  type_id: 0xab336d04
+  full_name: "get_user_pages_unlocked"
 }
 elf_symbol {
   id: 0xce04fca2
@@ -397365,6 +397400,7 @@ interface {
   symbol_id: 0xdee25d92
   symbol_id: 0xe251c99f
   symbol_id: 0xac3dec68
+  symbol_id: 0x717596ae
   symbol_id: 0xf9bb4624
   symbol_id: 0x60b70858
   symbol_id: 0x7f488498
@@ -399368,7 +399404,9 @@ interface {
   symbol_id: 0x0ac85cf7
   symbol_id: 0x853a2529
   symbol_id: 0x236d47d9
+  symbol_id: 0x6a8a4883
   symbol_id: 0x4909936e
+  symbol_id: 0x474c6d6a
   symbol_id: 0xce04fca2
   symbol_id: 0x4ba4e06f
   symbol_id: 0xbac82e84
