@@ -337309,6 +337309,24 @@ elf_symbol {
   full_name: "__traceiter_sched_waking"
 }
 elf_symbol {
+  id: 0x62a42e92
+  name: "__traceiter_softirq_entry"
+  is_defined: true
+  symbol_type: FUNCTION
+  crc: 0x263c5561
+  type_id: 0x9ab9affb
+  full_name: "__traceiter_softirq_entry"
+}
+elf_symbol {
+  id: 0xa7ccbbf5
+  name: "__traceiter_softirq_exit"
+  is_defined: true
+  symbol_type: FUNCTION
+  crc: 0x1b06a32a
+  type_id: 0x9ab9affb
+  full_name: "__traceiter_softirq_exit"
+}
+elf_symbol {
   id: 0x863777a0
   name: "__traceiter_suspend_resume"
   is_defined: true
@@ -341213,6 +341231,24 @@ elf_symbol {
   crc: 0x36772c03
   type_id: 0x18ccbd2c
   full_name: "__tracepoint_sched_waking"
+}
+elf_symbol {
+  id: 0x9a65f074
+  name: "__tracepoint_softirq_entry"
+  is_defined: true
+  symbol_type: OBJECT
+  crc: 0x12c92cec
+  type_id: 0x18ccbd2c
+  full_name: "__tracepoint_softirq_entry"
+}
+elf_symbol {
+  id: 0x158cc323
+  name: "__tracepoint_softirq_exit"
+  is_defined: true
+  symbol_type: OBJECT
+  crc: 0x54cebae9
+  type_id: 0x18ccbd2c
+  full_name: "__tracepoint_softirq_exit"
 }
 elf_symbol {
   id: 0x5b327cd6
@@ -397172,6 +397208,8 @@ interface {
   symbol_id: 0xf574f9d9
   symbol_id: 0x8fa66546
   symbol_id: 0x20097074
+  symbol_id: 0x62a42e92
+  symbol_id: 0xa7ccbbf5
   symbol_id: 0x863777a0
   symbol_id: 0xcac5a7d5
   symbol_id: 0x2dc83a86
@@ -397606,6 +397644,8 @@ interface {
   symbol_id: 0xf586b3bb
   symbol_id: 0x97e630b0
   symbol_id: 0xa70e8cd2
+  symbol_id: 0x9a65f074
+  symbol_id: 0x158cc323
   symbol_id: 0x5b327cd6
   symbol_id: 0xe91cdbb3
   symbol_id: 0x4f1ffabc
