@@ -380789,6 +380789,15 @@ elf_symbol {
   full_name: "poll_state_synchronize_srcu"
 }
 elf_symbol {
+  id: 0x7bf7b7b1
+  name: "post_page_relinquish_tlb_inv"
+  is_defined: true
+  symbol_type: FUNCTION
+  crc: 0xcc8be82d
+  type_id: 0x10985193
+  full_name: "post_page_relinquish_tlb_inv"
+}
+elf_symbol {
   id: 0xd612789c
   name: "power_supply_am_i_supplied"
   is_defined: true
@@ -407019,6 +407028,7 @@ interface {
   symbol_id: 0x3020cd17
   symbol_id: 0x25c6452e
   symbol_id: 0x324d8228
+  symbol_id: 0x7bf7b7b1
   symbol_id: 0xd612789c
   symbol_id: 0x561323f1
   symbol_id: 0x50bfe1d8
