@@ -367155,6 +367155,15 @@ elf_symbol {
   full_name: "iio_trigger_free"
 }
 elf_symbol {
+  id: 0xaaf2e930
+  name: "iio_trigger_generic_data_rdy_poll"
+  is_defined: true
+  symbol_type: FUNCTION
+  crc: 0x2d6bcdcb
+  type_id: 0x3b6e45be
+  full_name: "iio_trigger_generic_data_rdy_poll"
+}
+elf_symbol {
   id: 0x613f6d1f
   name: "iio_trigger_notify_done"
   is_defined: true
@@ -405057,6 +405066,7 @@ interface {
   symbol_id: 0xfc17cb5d
   symbol_id: 0x7ae28990
   symbol_id: 0xcc1f3656
+  symbol_id: 0xaaf2e930
   symbol_id: 0x613f6d1f
   symbol_id: 0x83c94241
   symbol_id: 0x7551a60b
