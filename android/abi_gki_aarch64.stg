@@ -384789,6 +384789,15 @@ elf_symbol {
   full_name: "regmap_reinit_cache"
 }
 elf_symbol {
+  id: 0x51562a5b
+  name: "regmap_test_bits"
+  is_defined: true
+  symbol_type: FUNCTION
+  crc: 0xa1615065
+  type_id: 0x9eed9829
+  full_name: "regmap_test_bits"
+}
+elf_symbol {
   id: 0xf68e2a91
   name: "regmap_update_bits_base"
   is_defined: true
@@ -409104,6 +409113,7 @@ interface {
   symbol_id: 0x7aadc374
   symbol_id: 0x799e8ae8
   symbol_id: 0x541cef30
+  symbol_id: 0x51562a5b
   symbol_id: 0xf68e2a91
   symbol_id: 0x33807c0a
   symbol_id: 0x396ad9d1
