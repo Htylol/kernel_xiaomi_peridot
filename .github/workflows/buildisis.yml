@@ -59,7 +59,7 @@ jobs:
     - name: Prepare the build environment
       run: |
         sudo apt update -y
-        sudo apt install -y flex bison libncurses-dev libssl-dev bc build-essential git ccache
+        sudo apt install -y flex bison libncurses-dev libssl-dev bc build-essential git ccache binutils-aarch64-linux-gnu
         mkdir -p $HOME/tc
         cd $HOME/tc
         wget https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/refs/heads/main/clang-r547379.tar.gz -O clang.tar.gz
