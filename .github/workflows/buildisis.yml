@@ -77,6 +77,8 @@ jobs:
 
     - name: Building kernel
       run: |
+        rm -rf KernelSU-Next
+        curl -LSs "https://raw.githubusercontent.com/rifsxd/KernelSU-Next/next/kernel/setup.sh" | bash -s next
         export PATH="$HOME/tc/clang/bin:$PATH"
         export LD_LIBRARY_PATH=${HOME}/tc/clang/lib64:$LD_LIBRARY_PATH
         export KBUILD_COMPILER_STRING=$($HOME/tc/clang/bin/clang --version | head -n 1 | perl -pe 's/\(http.*?\)//gs' | sed -e 's/  */ /g' -e 's/[[:space:]]*$//')
