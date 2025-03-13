@@ -33,7 +33,18 @@ jobs:
       contents: write
     steps:
 
-    # [Keep previous steps unchanged here, from Display User Inputs to Building kernel]
+    - name: Notify build start
+      uses: appleboy/telegram-action@master
+      with:
+        to: ${{ secrets.TELEGRAM_CHAT_ID }}
+        token: ${{ secrets.TELEGRAM_TOKEN }}
+        format: html
+        message: |
+          🚀 <b>Kernel Build Started!</b>
+          🔧 <a href="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}">View Workflow Run</a>
+          <b>📦 Build Title</b>: <code>${{ github.event.inputs.BUILD_TITLE || github.event.inputs.CODENAME }}</code>
+          <b>📱 Device Codename</b>: <code>${{ github.event.inputs.CODENAME }}</code>
+
 
     - name: Send zip file to Telegram
       if: success()
