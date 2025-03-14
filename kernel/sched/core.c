@@ -7453,79 +7453,78 @@ struct task_struct *idle_task(int cpu)
  * required to meet deadlines.
  */
 unsigned long effective_cpu_util(int cpu, unsigned long util_cfs,
-				 unsigned long *min,
-				 unsigned long *max)
+                                 unsigned long *min,
+                                 unsigned long *max)
 {
-	unsigned long dl_util, util, irq, max = 0, scale;
-	struct rq *rq = cpu_rq(cpu);
+        unsigned long dl_util, util, irq, max_val = 0, scale;
+        struct rq *rq = cpu_rq(cpu);
 
-	scale = arch_scale_cpu_capacity(cpu);
+        scale = arch_scale_cpu_capacity(cpu);
 
-	/*
-	 * Early check to see if IRQ/steal time saturates the CPU, can be
-	 * because of inaccuracies in how we track these -- see
-	 * update_irq_load_avg().
-	 */
-	irq = cpu_util_irq(rq);
-	if (unlikely(irq >= scale)) {
-		if (min)
-			*min = scale;
-		if (max)
-			*max = scale;
-		return scale;
-	}
+        /*
+         * Early check to see if IRQ/steal time saturates the CPU, can be
+         * because of inaccuracies in how we track these -- see
+         * update_irq_load_avg().
+         */
+        irq = cpu_util_irq(rq);
+        if (unlikely(irq >= scale)) {
+                if (min)
+                        *min = scale;
+                if (max)
+                        *max = scale;
+                return scale;
+        }
 
-	if (min) {
-		/*
-		 * The minimum utilization returns the highest level between:
-		 * - the computed DL bandwidth needed with the IRQ pressure which
-		 *   steals time to the deadline task.
-		 * - The minimum performance requirement for CFS and/or RT.
-		 */
-		*min = max(irq + cpu_bw_dl(rq), uclamp_rq_get(rq, UCLAMP_MIN));
+        if (min) {
+                /*
+                 * The minimum utilization returns the highest level between:
+                 * - the computed DL bandwidth needed with the IRQ pressure which
+                 *   steals time to the deadline task.
+                 * - The minimum performance requirement for CFS and/or RT.
+                 */
+                *min = max(irq + cpu_bw_dl(rq), uclamp_rq_get(rq, UCLAMP_MIN));
 
-		/*
-		 * When an RT task is runnable and uclamp is not used, we must
-		 * ensure that the task will run at maximum compute capacity.
-		 */
-		if (!uclamp_is_used() && rt_rq_is_runnable(&rq->rt))
-			*min = max(*min, scale);
-	}
+                /*
+                 * When an RT task is runnable and uclamp is not used, we must
+                 * ensure that the task will run at maximum compute capacity.
+                 */
+                if (!uclamp_is_used() && rt_rq_is_runnable(&rq->rt))
+                        *min = max(*min, scale);
+        }
 
-	/*
-	 * Because the time spend on RT/DL tasks is visible as 'lost' time to
-	 * CFS tasks and we use the same metric to track the effective
-	 * utilization (PELT windows are synchronized) we can directly add them
-	 * to obtain the CPU's actual utilization.
-	 */
-	util = util_cfs + cpu_util_rt(rq);
-	util += cpu_util_dl(rq);
+        /*
+         * Because the time spend on RT/DL tasks is visible as 'lost' time to
+         * CFS tasks and we use the same metric to track the effective
+         * utilization (PELT windows are synchronized) we can directly add them
+         * to obtain the CPU's actual utilization.
+         */
+        util = util_cfs + cpu_util_rt(rq);
+        util += cpu_util_dl(rq);
 
-	/*
-	 * The maximum hint is a soft bandwidth requirement, which can be lower
-	 * than the actual utilization because of uclamp_max requirements.
-	 */
-	if (max)
-		*max = min(scale, uclamp_rq_get(rq, UCLAMP_MAX));
+        /*
+         * The maximum hint is a soft bandwidth requirement, which can be lower
+         * than the actual utilization because of uclamp_max requirements.
+         */
+        if (max)
+                *max = min(scale, uclamp_rq_get(rq, UCLAMP_MAX));
 
-	if (util >= scale)
-		return scale;
+        if (util >= scale)
+                return scale;
 
-	/*
-	 * There is still idle time; further improve the number by using the
-	 * irq metric. Because IRQ/steal time is hidden from the task clock we
-	 * need to scale the task numbers:
-	 *
-	 *              max - irq
-	 *   U' = irq + --------- * U
-	 *                 max
-	 */
-	util = scale_irq_capacity(util, irq, scale);
-	util += irq;
+        /*
+         * There is still idle time; further improve the number by using the
+         * irq metric. Because IRQ/steal time is hidden from the task clock we
+         * need to scale the task numbers:
+         *
+         *              max - irq
+         *   U' = irq + --------- * U
+         *                 max
+         */
+        util = scale_irq_capacity(util, irq, scale);
+        util += irq;
 
-	return min(scale, util);
+        return min(scale, util);
 }
-
 unsigned long sched_cpu_util(int cpu)
 {
 	return effective_cpu_util(cpu, cpu_util_cfs(cpu), NULL, NULL);
